@@ -142,7 +142,10 @@ export default function CreateItem() {
                         name="Asset"
                         className="my-4"
                         onChange={onChange}
+                        accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document video/mp4,video/x-m4v,video/*" 
                     />
+                   
+ 
                     {
                         fileUrl && (
                            
