@@ -42,12 +42,22 @@ To install all the packes after Cloning the repo use command
 npm i
 ```
 
+Install Metamask Wallet on your browser and make your account on it.
+
 TO run the code:
 Open 3 terminals in your code editor parallelly and type :
 
 ```bash
 npx hardhat node
 ```
+You will get a list of 20 address , out of which you can choose one of the addresses, go to the meta mask wallet and import account where you will paste the adress(private key).
+
+From the recently made account -> go to account details and export Private Key and copy it.
+
+Create a file .secret in the project and paste the Key.
+
+This will help establish connect with our local host and funds will be transfered iin the metamask account.
+
 ```bash
 npx hardhat run scripts/deploy.js --network localhost
 ```
