@@ -86,20 +86,20 @@ export default function buycontent() {
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-                        <div className="p-4">
-                <p style={{ height: '64px'}} className="text-2xl font-semibold">
+                        <div className="p-4 bg-[#1D1932] text-white">
+                <p style={{ height: '64px'}} className="text-3xl font-semibold ">
                   {nft.name}
                 </p>
                 <div style={{ height: '70px', overflow: 'hidden'}}>
-                  <p className="text-gray-400">{nft.description}</p>
+                  <p className="text-zinc-400 text-3xl" >{nft.description}</p>
                 </div>
               </div>
-              <div className="p-4 bg-black">
+              <div className="p-4 bg-[#1D1932]">
                 <p className="text-2xl mb-4 font-bold text-white">
                   {nft.price} ETH
                 </p>
-                <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
-                onClick={() => buyNFT(nft)}>Buy NFT</button>
+                <button className="w-full bg-[#6F4FF2] text-white font-bold py-2 px-12 rounded"
+                onClick={() => buyNFT(nft)}>Buy Content</button>
             </div>
             </div>
           ))

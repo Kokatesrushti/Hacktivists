@@ -10,8 +10,8 @@ const index = () => {
   return (
     <body class="bg-[#290049]">
      <div class="flex flex-wrap justify-center relative">
-     <div className="mr-4 text-zinc-50 text-[110px] font-display font-[800] leading-[110px] tracking-[-0.1em] text-left pt-[40px] pl-[50px] z-[100]" >See Through NexArt<br></br>To Live A <br></br>Different Reality </div>
-  <div class="w-6/12 sm:w-4/12 px-4 relative right-[150px] ">
+     <div className="mr-4 text-zinc-50 text-[110px] font-display font-[600] leading-[110px] tracking-[-0.1em] text-left pt-[30px] relative left-[90px] z-[100]" >See Through <br></br>NexaVerse To Live A <br></br>Different Reality </div>
+  <div class="w-6/12 sm:w-4/12 px-4 relative right-[100px] ">
     <Image
       src={hero}
       alt="Picture of the author"
@@ -20,12 +20,12 @@ const index = () => {
     />
   </div>
   
-  <div className='mr-4 text-zinc-50 font-navi text-[20px] relative bottom-[200px] right-[290px]'>
+  <div className='mr-4 text-zinc-50 font-navi text-[20px] relative bottom-[150px] right-[230px]'>
     The largest NFT marketplace. Authentic and truly unique<br></br>
 digital creation. Signed and issued by the creator,made<br></br>
 possible by blockchain technology</div>
   </div>
-  <Image className='fixed bottom-[200px] left-[100px] w-[100px] h-[100px]'  src={hebtn}></Image>
+  <Image className='fixed bottom-[150px] left-[100px] w-[100px] h-[100px]'  src={hebtn}></Image>
   <Image className='fixed bottom-[0px] right-[10px] w-[350px] h-[150px]' src={hedes2}></Image>
   <Image className='fixed bottom-[0px] left-[10px] w-[350px] h-[150px]' src={hedes3}></Image>
 

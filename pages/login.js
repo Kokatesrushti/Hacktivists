@@ -8,10 +8,10 @@ import Link from 'next/link'
 export default function ContentProvider() {
     return(
       <body className="bg-[#290049]">
-      <div className="bg-[#2B004E] w-[900px] h-[800px] ml-[350px] mt-[30px] z-[0]">
+      <div className="bg-[#2B004E] w-[900px] h-[800px] ml-[350px] mt-[30px] z-[0] pt-[40px]">
       <div className="flex justify-center">
-          <h1 className="text-[#FFFFFF] font-navi text-[24px] relative left-[300px]"></h1>
-      <Image className='fixed bottom-[230px] left-[1050px] w-[650px] h-[650px]' src={hedes1}></Image>
+          <h1 className="text-[#FFFFFF] font-navi text-[24px] relative left-[230px] ">LOGIN</h1>
+      <Image className='fixed bottom-[230px] left-[800px] w-[650px] h-[650px]' src={hedes1}></Image>
           <div className="w-1/2 flex flex-col pb-12 mt-[30px]">
               <p className='text-[#FFFFFF] mb-[0px] mt-[30px] font-navi'>Enter your name</p>
               <input 
@@ -22,12 +22,12 @@ export default function ContentProvider() {
                    <p className='text-[#FFFFFF] mb-[0px] mt-[30px] font-navi'>Enter your password</p>
               <input 
                   placeholder="Password"
-                  className="border rounded p-4 bg-transparent text-[#ACACAC] mb-[24px] mt-[5px]  font-display"
+                  className="border rounded p-4 bg-transparent text-[#ACACAC] mb-[40px] mt-[5px]  font-display"
                   onChange={e => updateFormInput({...formInput, name: e.target.value})}
                   />
 
-               <button ><ConnectWallet accentColor="#1C51FE"  colorMode="dark" py-0 px-6/></button>  
-        <Link href="/ContentProvider" className="mr-4 text-zinc-50 pr-[20px] ">
+               <button ><ConnectWallet accentColor="#1C51FE"  colorMode="dark mt-[50px]" /></button>  
+        <Link href="/create-item" className="mr-4 text-zinc-50 pr-[20px] pl-[20px] pt-[20px] text-[20px] ">
           I am an admin 
         </Link>
                

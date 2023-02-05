@@ -126,25 +126,24 @@ export default function CreateItem() {
         <body className="bg-[#290049]">
         <div className="bg-[#2B004E] w-[900px] h-[800px] ml-[350px] mt-[30px] z-[0]">
         <div className="flex justify-center">
-            <h1 className="text-[#FFFFFF] font-navi text-[24px] relative left-[300px]">Sell Content</h1>
-        <Image className='fixed bottom-[550px] left-[300px] w-[200px] h-[160px] ' src={hedes4}></Image>
-        <Image className='fixed bottom-[230px] left-[1050px] w-[650px] h-[650px]' src={hedes1}></Image>
+            <h1 className="text-[#FFFFFF] font-navi text-[24px] relative left-[300px] top-[30px]">Sell Content</h1>
+        <Image className='fixed bottom-[230px] left-[950px] w-[650px] h-[650px]' src={hedes1}></Image>
             <div className="w-1/2 flex flex-col pb-12 mt-[30px]">
                 <p className='text-[#FFFFFF] mb-[0px] mt-[30px] font-navi'>Content</p>
                 <input 
-                    placeholder="Asset Name"
+                    placeholder="Content Name"
                     className="border rounded p-4 bg-transparent text-[#ACACAC] mb-[24px] mt-[5px]  font-display"
                     onChange={e => updateFormInput({...formInput, name: e.target.value})}
                     />
                     <p className='text-[#FFFFFF] mb-[5px] mt-[20px]  font-navi'>Content Description</p>
                 <textarea
-                     placeholder="Asset description"
+                     placeholder="Content description"
                      className="mt-[0px] mb-[12px] border rounded p-4 bg-transparent text-[#ACACAC] font-display"
                      onChange={e => updateFormInput({...formInput, description: e.target.value})}
                      />
                      <p className='text-[#FFFFFF] mt-[5px] mb-[8px] font-navi'>Content Price</p>
                 <input 
-                    placeholder="Asset Price in Eth"
+                    placeholder="Content Price in Eth"
                     className="mt-[0px] border rounded p-4 bg-transparent text-[#ACACAC] font-display"
                     type="number"
                     onChange={e => updateFormInput({...formInput, price: e.target.value})}
@@ -176,7 +175,7 @@ export default function CreateItem() {
                     }
                     <button onClick={createItem}
                      className="font-bold mt-4 bg-[#1C51FE] text-white rounded p-4 shadow-lg"
-                     >Create NFT</button>
+                     >Create Content</button>
             </div>
         </div>
         </div>

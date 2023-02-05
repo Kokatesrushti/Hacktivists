@@ -57,27 +57,30 @@ export default function CreatorDashboard() {
   return (
     <div>
       <div className="p-4">
-        <h2 className="text-2xl py-2">Items Created</h2>
+        <h2 className="text-2xl py-2 text-white font-navi">Items Created</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+     
+                
+              
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border shadow rounded-xl overflow-hidden">
+              <div key={i} className="border shadow rounded-xl overflow-hidden object-cover">
                
-
+                
                         <Image
                             src={nft.image}
                             alt="Picture of the author"
                             className="rounded"
-                            width={250}
-                            height={300} 
+                            width={200}
+                            height={250} 
                             // blurDataURL="data:..." automatically provided
                             // placeholder="blur" // Optional blur-up while loading
                           />
-
                 <div className="p-4 bg-black">
                   <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
                 </div>
               </div>
+              
             ))
           }
         </div>
