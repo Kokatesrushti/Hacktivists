@@ -3,6 +3,10 @@ import {ethers } from 'ethers'
 import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 import { create as IPFSHTTPCLIENT } from 'ipfs-http-client';
+import hedes2 from './images/hero_des2.png'
+import hedes3 from './images/hero_des3.png'
+import hedes1 from './images/Frame 2778.png'
+import hedes4 from './images/Group 18.png'
 // const client = ipfsHttpClient('https://ipfs.infura.io:5001');
 
 
@@ -119,30 +123,38 @@ export default function CreateItem() {
     }
 
     return (
+        <body className="bg-[#290049]">
+        <div className="bg-[#2B004E] w-[900px] h-[800px] ml-[350px] mt-[30px] z-[0]">
         <div className="flex justify-center">
-            <div className="w-1/2 flex flex-col pb-12">
+            <h1 className="text-[#FFFFFF] font-navi text-[24px] relative left-[300px]">Sell Content</h1>
+        <Image className='fixed bottom-[550px] left-[300px] w-[200px] h-[160px] ' src={hedes4}></Image>
+        <Image className='fixed bottom-[230px] left-[1050px] w-[650px] h-[650px]' src={hedes1}></Image>
+            <div className="w-1/2 flex flex-col pb-12 mt-[30px]">
+                <p className='text-[#FFFFFF] mb-[0px] mt-[30px] font-navi'>Content</p>
                 <input 
                     placeholder="Asset Name"
-                    className="mt-8 border rounded p-4"
+                    className="border rounded p-4 bg-transparent text-[#ACACAC] mb-[24px] mt-[5px]  font-display"
                     onChange={e => updateFormInput({...formInput, name: e.target.value})}
                     />
+                    <p className='text-[#FFFFFF] mb-[5px] mt-[20px]  font-navi'>Content Description</p>
                 <textarea
                      placeholder="Asset description"
-                     className="mt-2 border rounded p-4"
+                     className="mt-[0px] mb-[12px] border rounded p-4 bg-transparent text-[#ACACAC] font-display"
                      onChange={e => updateFormInput({...formInput, description: e.target.value})}
                      />
+                     <p className='text-[#FFFFFF] mt-[5px] mb-[8px] font-navi'>Content Price</p>
                 <input 
                     placeholder="Asset Price in Eth"
-                    className="mt-8 border rounded p-4"
+                    className="mt-[0px] border rounded p-4 bg-transparent text-[#ACACAC] font-display"
                     type="number"
                     onChange={e => updateFormInput({...formInput, price: e.target.value})}
                     />
+                    <p className='text-[#FFFFFF] mb-[0px] mt-[20px] font-navi'>Upload Content</p>
                     <input
                         type="file"
                         name="Asset"
-                        className="my-4"
+                        className="my-4 mt-[5px] file:py-2 file:px-4 text-[#FFFFFF]"
                         onChange={onChange}
-                        accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document video/mp4,video/x-m4v,video/*" 
                     />
                    
  
@@ -158,12 +170,18 @@ export default function CreateItem() {
                             // blurDataURL="data:..." automatically provided
                             // placeholder="blur" // Optional blur-up while loading
                           />
+                        //   <video src={fileUrl}  width={400} height={300} 
+                        //    />
                         )
                     }
                     <button onClick={createItem}
-                     className="font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg"
+                     className="font-bold mt-4 bg-[#1C51FE] text-white rounded p-4 shadow-lg"
                      >Create NFT</button>
             </div>
         </div>
+        </div>
+        <Image className='fixed bottom-[10px] right-[10px] w-[350px] h-[150px]' src={hedes2}></Image>
+  <Image className='fixed bottom-[10px] left-[10px] w-[350px] h-[150px]' src={hedes3}></Image>
+        </body>
     )
 }
